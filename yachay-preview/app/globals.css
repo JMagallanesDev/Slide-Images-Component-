@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+/* El componente usa variantes dark:. Con este custom-variant el tema se
+   controla con la clase .dark en <html> (toggle del demo). Si prefieres que
+   siga a prefers-color-scheme, borra esta línea. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+}
